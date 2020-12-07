@@ -1,0 +1,863 @@
+/*  import google fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+.max_width{
+	max-width:1300px; 
+	margin:auto;
+	padding:0 80px;
+	
+}
+.scroll_up_down_btn{
+	position:fixed;
+	height:45px;
+	width:42px;
+	background:red;
+	right:30px;
+	bottom:30px;
+	text-align:center;
+	line-height:45px;
+	color:white;
+	z-index:99999;
+	font-size:30px;
+	border-radius:7px;
+	cursor:pointer;
+	
+}
+.max_width span{color:red;}
+
+.navbar .max_width{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	
+	
+}
+
+/*navbar style*/
+.navbar {
+	/* background:red*/
+	position:fixed;
+	width:100%;
+	font-family: 'Ubuntu', sans-serif;
+	padding:30px 0;
+	z-index:99999;
+	
+}
+.navbar.sticky{
+	background:red;
+	padding:15px 0;
+	transition:0.4s ease;
+	
+}
+.navbar .logo a{
+	color:white;
+    font-size:35px;
+    font-weight:600;	
+	
+}
+.navbar.sticky .logo span{color:white;
+       transition:0.2s ease;
+}
+.menu{
+	
+	
+}
+.navbar .menu li{
+	list-style:none;
+	display:inline-block;
+	
+}
+
+
+.navbar .menu li a{
+	display:block;
+	color:white;
+    font-size:18px;
+	font-weight:500px;
+	margin-left:25px;
+	transition:color 0.3s ease;
+	
+}
+.navbar .menu li a:hover{
+	color:red;
+	
+}
+
+.navbar.sticky .menu li a:hover {
+	color:#3498DB;
+}
+/*menu button style*/
+.menu_button{
+	color:white;
+	cursor:pointer;
+	font-size:25px;
+	display:none;
+	
+}
+
+
+.home{
+	display:flex;
+	background:url("img/bag.jpg")no-repeat center;
+	height:100vh;
+	color:white;
+	min-height:600px;
+	font-family: 'Ubuntu', sans-serif;
+}
+.home .max_width{
+	margin:auto 0 auto 40px;
+	
+}
+.home .home_content .text_1{
+	font-size:30px;
+	
+}
+
+.home .home_content .text_2{
+	font-size:60px;
+	font-weight:600;
+	
+	
+}
+
+.home .home_content .text_3{
+	font-size:25px;
+	font-weight:500;
+	margin:5px 0;
+	
+}
+.home .home_content .text_3 span{
+	color:red;  
+}
+.home .home_content a{
+	background:red;
+	color:white;
+	font-size:17px;
+	font-weight:500;
+	padding:10px 25px;
+	display:inline-block;
+	margin-top:10px;
+	border-radius:7px;
+	border:2px solid red;
+}
+.home .home_content a:hover{
+	color:red;
+	background:none;
+	transition:all 0.4s ease;
+}
+
+/*---about section--*/
+
+.about{
+	font-family:'Poppins', sans-serif;
+	padding:100px 0;
+}
+.about_title{
+	font-family:'ubuntu', sans-serif;
+	text-align:center;
+	font-size:40px;
+	font-weight:500;
+	margin-bottom:50px;
+	padding-bottom:30px;
+	position:relative;
+	
+}
+.about_title:before{
+	content:" ";
+	position:absolute;
+	width:180px;
+	height:3px;
+	background:black; 
+	bottom:0px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.about_title:after{
+	content:"who i am";
+	position:absolute;
+	background:white; 
+	bottom:3px;
+	left:50%;
+	bottom:-8px;
+	transform:translateX(-50%);
+	font-size:20px;
+}
+.about .about_content{
+	display:flex;
+}
+
+.about .about_content .colum_left img{
+	height:400px;
+	width:400px;
+	object-fit:cover;
+	border-radius:50%;
+	display:inline-block;
+	
+	
+}
+.about .about_content .colum_left{
+	width:45%;
+	
+}
+.about .about_content{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.about .about_content .colum_right{
+	width:55%;
+}
+.about .about_content .colum_right .text{
+	font-size:25px;
+	font-weight:600;
+	margin-bottom:10px;
+}
+.about .about_content .colum_right .text span{color:red;}
+.about .about_content .colum_right p{
+	text-align:justify;
+}
+.about .about_content .colum_right a{
+	background:red;
+	color:white;
+	font-size:17px;
+	font-weight:500;
+	padding:10px 25px;
+	display:inline-block;
+	margin-top:10px;
+	border-radius:7px;
+	border:2px solid red;
+}
+.about .about_content .colum_right a:hover{
+	background:none;
+	color:red;
+	transition:all .3s ease;
+}
+
+
+
+
+/*---servise section style---*/
+
+.service{
+	font-family:'Poppins', sans-serif;
+	padding:100px 0;
+	background:black;
+	color:white;
+	
+}
+.service_title{
+	font-family:'ubuntu', sans-serif;
+	text-align:center;
+	font-size:40px;
+	font-weight:500;
+	margin-bottom:50px;
+	padding-bottom:30px;
+	position:relative;
+	
+}
+.service_title:before{
+	content:" ";
+	position:absolute;
+	width:180px;
+	height:3px;
+	background:white; 
+	bottom:0px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.service_title:after{
+	content:"What i provide";
+	position:absolute;
+	background:black; 
+	color:red;
+	bottom:3px;
+	left:50%;
+	bottom:-8px;
+	transform:translateX(-50%);
+	font-size:20px;
+}
+.service .service_content{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	flex-wrap:wrap;
+}
+.service .service_content .card{
+	width:33%;
+	background:#222;
+	text-align:center;
+	padding:20px 25px;
+	cursor:pointer;
+	border-radius:5px;
+	transition:all 0.3s ease;
+	
+}
+.service .service_content .card .box{
+	transition:all 0.3s ease;
+}
+.service .service_content .card .box:hover{
+	transform:scale(1.05);
+
+}
+.service .service_content .card:hover{
+	background:red;
+	
+	
+}
+.service .service_content .card i{
+	font-size:30px;
+	color:red;
+}
+.service .service_content .card:hover i{
+	color:white;
+	
+}
+.service .service_content .card .text{
+	font-size:25px;
+	font-weight:500;
+	margin:12px 0 7px 0;
+}
+
+.scills_title{
+	font-family:'ubuntu', sans-serif;
+	text-align:center;
+	font-size:40px;
+	font-weight:500;
+	margin-bottom:50px;
+	padding-bottom:30px;
+	position:relative;
+	
+}
+.scills_title:before{
+	content:" ";
+	position:absolute;
+	width:180px;
+	height:3px;
+	background:black; 
+	bottom:0px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.scills_title:after{
+	content:"What i know";
+	position:absolute;
+	background:white; 
+	color:red;
+	bottom:3px;
+	left:50%;
+	bottom:-8px;
+	transform:translateX(-50%);
+	font-size:20px;
+}
+.skills_content{
+	font-family:'Poppins', sans-serif;
+	padding:60px 0;
+}
+.skills .skills_content{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:space-between; 
+}
+.skills .skills_content .colum_left{
+	width:calc(50%);
+	padding:10px;
+}
+.skills .skills_content .colum_right{
+	width:calc(50%);
+	padding:10px;
+}
+.skills .skills_content .colum_left .text{
+	font-size:25px;
+	font-weight:600;
+	margin:12px 0 7px 0;
+
+}
+.skills .skills_content .colum_left a{
+	background:red;
+	color:white;
+	font-size:17px;
+	font-weight:500;
+	padding:7px 25px;
+	display:inline-block;
+	margin-top:10px;
+	border-radius:7px;
+	border:2px solid red;
+}
+ .skills .skills_content .colum_left p{
+	text-align:justify;
+	
+}
+.skills .skills_content .colum_left a:hover{
+	background:none;
+	color:red;
+	transition:all .3s ease;
+}
+.skills .skills_content .colum_right{
+	margin-bottom:15px;
+}
+.skills .skills_content .colum_right .bars{
+	padding-bottom:20px;
+}
+.skills .skills_content .colum_right .info{
+	display:flex;
+	align-items:center;
+	justify-content:space-between;
+	padding-bottom:5px;
+	
+}
+.skills .skills_content .colum_right span{
+	font-weight:500;
+	font-size:18px;
+	color: #2b0e07;
+}
+.skills .skills_content .colum_right .line{
+	height:5px;
+	width:100%;
+	background:lightgrey;
+	position:relative;
+}
+.skills .skills_content .colum_right .line::before{
+	position:absolute;
+	content:"";
+	height:100%;
+	left:0;
+	top:0;
+	background:#a53014;
+	
+}
+.skills .skills_content .colum_right .html::before{
+	width:90%;
+}
+.skills .skills_content .colum_right .css::before{
+	width:70%;
+}
+.skills .skills_content .colum_right .jscript::before{
+	width:50%;
+}
+.skills .skills_content .colum_right .php::before{
+	width:40%;
+}
+.skills .skills_content .colum_right .sql::before{
+	width:50%;
+}
+/*teams section style---*/
+.teams{
+	font-family:'Poppins', sans-serif;
+	padding:60px 0;
+	background:black;
+	color:white;
+}
+
+.teams .team_title{
+	font-family:'ubuntu', sans-serif;
+	text-align:center;
+	font-size:40px;
+	font-weight:500;
+	margin-bottom:50px;
+	padding-bottom:30px;
+	position:relative;
+}
+.teams .team_title:before{
+	content:" ";
+	position:absolute;
+	width:180px;
+	height:3px;
+	background:red; 
+	bottom:0px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.teams .team_title:after{
+	content:"Who with me";
+	position:absolute;
+	background:black; 
+	color:red;
+	bottom:3px;
+	left:50%;
+	bottom:-8px;
+	transform:translateX(-50%);
+	font-size:20px;
+}
+.teams .carousel{
+   transition:all 0.3 ease;
+	
+	
+}
+
+.teams .carousel .team_card{
+	background:#353434  ;
+	border-radius:10px;
+	padding:25px 35px;
+	text-align:center;
+	transition:all 0.3s ease;
+	
+	
+	 
+}
+.teams .carousel .team_card .box{
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	transition:all 0.3s ease;
+}
+.teams .carousel .team_card:hover{
+	background:red;
+	
+	
+}
+.teams .carousel .team_card:hover .box{
+	transform:scale(1.05);
+}
+
+
+
+.teams .carousel .team_card .box img{
+	width:150px;
+	height:150px;
+	object-fit:cover;
+	border-radius:50%;
+	border:5px solid #a53014;
+	transition:all 0.3s ease;
+}
+.teams .carousel .team_card:hover img{
+	border-color:white;
+}
+.teams .carousel .team_card .box .text{
+	font-size:18px;
+	font-weight:600;
+	margin-bottom:10px;
+}
+.owl-dots{
+    text-align: center;
+    margin-top: 20px;
+}
+.owl-dot{
+    height: 13px;
+    width: 13px;
+    margin: 0 5px;
+    outline: none!important;
+    border-radius: 50%;
+    border: 2px solid crimson!important;
+    transition: all 0.3s ease;
+}
+.owl-dot.active{
+    width: 35px;
+    border-radius: 14px;
+}
+.owl-dot.active,
+.owl-dot:hover{
+    background: crimson!important;
+}
+
+.contact{
+	background:ur
+}
+.contact .contact_title{
+	font-family:'ubuntu', sans-serif;
+	text-align:center;
+	font-size:40px;
+	font-weight:500;
+	margin-bottom:50px;
+	padding-bottom:30px;
+	position:relative;
+}
+.contact .contact_title:before{
+	content:" ";
+	position:absolute;
+	width:180px;
+	height:3px;
+	background:black; 
+	bottom:0px;
+	left:50%;
+	transform:translateX(-50%);
+}
+.contact .contact_title:after{
+	content:"Get in tuch";
+	position:absolute;
+	background:white; 
+	color:red;
+	bottom:3px;
+	left:50%;
+	bottom:-8px;
+	transform:translateX(-50%);
+	font-size:20px;
+}
+.contact{
+	font-family:'Poppins', sans-serif;
+	padding:60px 0;
+}
+.contact .contact_content{
+	display:flex;
+	flex-wrap:wrap;
+	align-items:center;
+	justify-content:space-between;
+}
+.contact .contact_content .contact_text{
+	font-size:20px;
+	font-weight:600;
+	margin-bottom:10px;
+	
+}
+.contact .contact_content .colum_left{
+	width:calc(50%);
+	display:inline-block;
+	padding-right:15px;
+	
+}
+
+.contact .contact_content .colum_left{
+	text-align:justify;
+}
+.contact .contact_content .colum_left .icons{
+	margin:10px,0;
+
+}
+.contact .contact_content .colum .row{
+	display:flex;
+	height:60px;
+	align-items:center;
+}
+.contact .contact_content .colum .row i{
+
+	font-size:25px;
+}
+.contact .contact_content .colum .row .info{
+	margin-left:25px;
+}
+.contact .contact_content .colum .row .info .head{
+	font-weight:500;
+}
+.contact .contact_content .colum .row .info .sub_title{
+	color: #2e2c2b ;
+}
+.contact .right{
+	width:calc(50%);
+}
+.contact .right .colum_text{
+	font-size:20px;
+	font-weight:600;
+	margin-bottom:10px;
+}
+.contact .right form .fields{
+   display:flex;
+}
+.contact .right form .field,
+.contact .right form .fields .field{
+    height: 45px;
+    width: 100%;
+    margin-bottom: 15px;
+}
+.contact .right form .textarea{
+    height: 80px;
+    width: 100%;
+}
+.contact .right form .name{
+    margin-right: 10px;
+}
+.contact .right form .email{
+    margin-left: 10px;  
+}
+.contact .right form .field input,
+.contact .right form .textarea textarea{
+    height: 100%;
+    width: 100%;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    outline: none;
+    padding: 0 15px;
+    font-size: 17px;
+    font-family: 'Poppins', sans-serif;
+    transition: all 0.3s ease;
+}
+.contact .right form .field input:focus,
+.contact .right form .textarea textarea:focus{
+    border-color: #b3b3b3;
+}
+.contact .right form .textarea textarea{
+    padding-top: 10px;
+    resize: none;
+}
+.contact .right form .button{
+    height: 40px;
+    width: 170px;
+}
+.contact .right form .button button{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #bd0303;
+    background: crimson;
+    color: #fff;
+    outline: none;
+    font-size: 20px;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.contact .right form .button button:hover{
+    color:#bd0303;
+    background: none;
+}
+
+
+
+
+
+
+
+/*..............responsive .......*/
+
+@media(max-width:1300px){
+.home .max_width{
+	margin-left:0px;
+}
+
+}
+@media(max-width:1100px){
+.about .about_content .colum_left img{
+	height:250px;
+	width:250px;
+	border:2px solid red;
+	
+}
+
+}
+
+
+@media(max-width:990px){
+	.max_width{
+	padding:0 50px;
+	
+}
+}
+
+@media(max-width:700px){
+	
+.navbar .menu{
+	background:black;
+	height:100vh;
+	width:100%;
+	position:fixed;
+	left:-100%;
+	top:0;
+	text-align:center;
+	padding-top:50px;
+	transition:all 0.4s ease;
+}
+.navbar .menu.active{
+	left:0;
+}
+
+.navbar .menu li{
+	display:block;
+	
+}
+.navbar .menu li a{
+	display:inline-block;
+	margin:20px 0;
+	font-size:25px;
+	
+}
+.menu_button{
+	display:block;
+	z-index:999;
+}
+.menu_button i.active:before{
+	content:"\f00d";
+}
+.home .home_content .text_1{
+	font-size:25px;
+	
+}
+
+.home .home_content .text_2{
+	font-size:50px;
+	font-weight:600;
+}
+.home .home_content .text_3{
+	font-size:20px;
+}
+.home_content{
+	margin-left:-30px;
+}
+.home .home_content a{
+	font-size:14px;
+	padding:8px 21px;
+}
+.about_content .colum_right{
+	display:flex;
+	justify-content:center;
+	margin:0 auto 60px;
+}
+.about_content .colum_right{
+	flex:100%;
+	display:inline-block;
+}
+.service .service_content .card{
+	width:calc(100%);
+	margin-top:10px;
+	display:black;
+	margin-right:0px;
+}
+.skills .skills_content .colum_left{
+	width:calc(100%);
+	
+}
+.skills .skills_content .colum_right{
+	width:calc(100%);
+	margin-top:20px;
+	
+}
+.teams .carousel .team_card{
+	
+	
+	 
+}
+
+.contact .colum_left{width:100%;
+            
+}
+.contact .contact_text p{width:100%;}
+.contact .right{width:100%;}
+
+
+
+
+}
+
+@media(max-width:500px){
+	.home .home_content .text_2{
+	font-size:35px;
+	font-weight:600;
+}
+.home .home_content .text_3{
+	font-size:15px;
+}
+.home .home_content a{
+	font-size:10px;
+	padding:6px 17px;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
